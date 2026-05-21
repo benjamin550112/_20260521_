@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# AI 數據分析與洞察工具
 
-# Run and deploy your AI Studio app
+一個讓使用者貼上 CSV 報表並利用 Gemini AI 進行分析與洞察的網頁工具。
 
-This contains everything you need to run your app locally.
+## 功能特點
 
-View your app in AI Studio: https://ai.studio/apps/f5e8a415-c5e4-41ea-8ca6-4ca65b23af4c
+- **CSV 數據貼上與解析**：快速輸入您的 CSV 格式數據。
+- **AI 深度洞察**：利用 Google Gemini 模型自動產生商業建議與趨勢分析。
+- **Markdown 格式化輸出**：美觀且易讀的分析結果。
+- **一鍵複製**：方便快速複製分析結果。
 
-## Run Locally
+## 本地開發與啟動
 
-**Prerequisites:**  Node.js
+### 前置準備
 
+- [Node.js](https://nodejs.org/) (建議 v18 以上)
+- 準備好您的 [Gemini API Key](https://aistudio.google.com/)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 啟動步驟
+
+1. **安裝依賴套件**：
+   ```bash
+   npm install
+   ```
+
+2. **設定環境變數**：
+   - 複製 `.env.example` 為 `.env.local`：
+     ```bash
+     cp .env.example .env.local
+     ```
+   - 在 `.env.local` 中填入您的 `GEMINI_API_KEY`。
+
+3. **啟動開發伺服器**：
+   ```bash
+   npm run dev
+   ```
+   伺服器啟動後，可在瀏覽器打開 `http://localhost:3000` 進行測試。

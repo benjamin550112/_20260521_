@@ -8,11 +8,6 @@ dotenv.config();
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY!,
-  httpOptions: {
-    headers: {
-      'User-Agent': 'aistudio-build',
-    }
-  }
 });
 
 const SYSTEM_INSTRUCTION = `你是一個專業的數據分析師。請分析使用者提供的 CSV 數據，並提供深入的洞察、趨勢分析以及具體的商業建議。

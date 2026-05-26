@@ -11,3 +11,5 @@ test-api.js
 
 # Local Netlify folder
 .netlify
+
+.vercel
